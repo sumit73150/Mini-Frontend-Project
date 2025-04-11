@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    margin-bottom: 9.05%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: #3dd5f0;
+    width: 18%;
+    height: 12vh;
+}
+
+.hero-section .sub-heading {
+    margin-top: 2;
+    color: white;
+    font-size: large;
+}
+
+.hero-section img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-secondary:hover {
+    background: rgb(236, 233, 233);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 5px;
+    width: 360px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.footer-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 360px;
+    color: rgb(161, 161, 161);
+}
+
+.footer-group span {
+    color: rgb(161, 161, 161);
+}
+
+.footer-group a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-group a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .footer-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-group span,
+    .footer-group a {
+        margin-bottom: 10px;
+    }
+}
+
+h2 {
+    margin: 0;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.sub-heading {
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(161, 161, 161);
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(236, 233, 233);
+    background: white;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}

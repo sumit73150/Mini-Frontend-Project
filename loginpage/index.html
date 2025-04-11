@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="my-form">
+        <div class="login-welcome-row">
+            <a href="#" title="Login">
+                <img src="logo.svg" alt="logo" class="logo">
+            </a>
+            <h1>You must sign in to join</h1>
+        </div>
+        <div class="socials-row">
+            <a href="#" title="Use Google">
+                <img src="google.svg" alt="Google">
+                Sign in with Google
+            </a>
+            <!-- Add more social login options here -->
+        </div>
+        <div class="lines">
+            <div class="line"></div>
+            <span>or</span>
+            <div class="line"></div>
+        </div>
+        <div class="text-field">
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                autocomplete="off" 
+                placeholder="you@example.com" 
+                required>
+            <div class="error-message">Email in incorrect format</div> 
+        </div>
+        <!-- Add additional text fields if needed -->
+        <button type="submit" class="my-form_button">
+            Login
+        </button>
+        <div class="my-form_actions">
+            <div class="my-form_row">
+                <span>Don't have an account?</span>
+                <a href="#" title="Create Account">Sign up</a>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

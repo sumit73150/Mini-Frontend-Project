@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Neo Tech X</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="section_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="drop-down open">
+            <li><a href="hero">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Contact</a></li>
+             <li><a href="#" class="section_btn">Get Started</a></li>
+         
+
+        </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>Made by Sumit Verma</p>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownmenu  = document.querySelector('.drop-down')
+
+        toggleBtn.oneclick = function(){
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('oepn')
+
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+
+</html>

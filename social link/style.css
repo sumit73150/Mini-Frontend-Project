@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.wrapper .icon:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -55px;
+}
+
+.facebook {
+    --color: #1877f2;
+}
+
+.twitter {
+    --color: #1da1f2;
+}
+
+.instagram {
+    --color: #e4405f;
+}
+
+.github {
+    --color: #333333;
+}
+
+.youtube {
+    --color: #cd201f;
+}
+
+.wrapper .icon:hover {
+    background: var(--color);
+    color: #ffffff;
+}
+
+.wrapper .icon:hover .tooltip {
+    background: var(--color);
+    color: #ffffff;
+}

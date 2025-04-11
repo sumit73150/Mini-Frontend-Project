@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient: linear-gradient(45deg, #ff7c7d, #ffda67);
+    --card: #272524;
+}
+
+body {
+    background: var(--gradient);
+    color: #fdfcfd;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    max-width: 650px;
+    padding: 44px 30px 44px 20px;
+    background: var(--card);
+    border-radius: 24px;
+}
+
+.card img {
+    max-width: 280px;
+    width: 36vw;
+    height: 300px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 30px;
+    border-radius: inherit;
+    box-shadow: 0 60px 40px rgba(0, 0, 0, 0.08);
+    transition: border-radius 0.3s;
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.75;
+}
+ 
+
+.card p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.5;
+} 
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials>button {
+    position: relative;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socials>button:hover {
+    transform: scale(1.1);
+    /* Interactive hover effect */
+}
+
+.socials>button>i {
+    font-size: 22px;
+    color: #fdfcfd;
+    /* White icons */
+    background: #3f3b39;
+    /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    transition: background 0.3s;
+}
+
+.socials>button:hover>i {
+    background: var(--gradient);
+    /* Gradient on hover */
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card h2 {
+        margin-right: 0;
+        font-size: 26px;
+    }
+
+    .card img {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 100px;
+        height: 250px;
+    }
+
+    .card p {
+        max-width: 360px;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 440px) {
+    .card img {
+        height: 50vw;
+        width: 50vw;
+        border-radius: 50%;
+        border: 12px solid var(--card);
+        margin: -140px 30px 0;
+    }
+}
